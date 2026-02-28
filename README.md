@@ -14,11 +14,11 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from flask_cors import CORS
 from database.db import db
 
-Modelos
+#Modelos
 from models.ganadero import Ganadero
 from models.animal import Animal
 
-Blueprints API
+#Blueprints API
 from routes.animal_routes import animal_bp
 from routes.ganadero_routes import ganadero_bp
 from routes.vacuna_routes import vacuna_bp
