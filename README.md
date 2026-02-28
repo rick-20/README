@@ -476,7 +476,7 @@ def reporte_por_ganadero(ganadero_id):
 
 {% block content %}
 
-<h2 class="mb-3">🐂 Animales</h2>
+<h2 class="mb-3"> Animales</h2>
 <p>Total animales: <strong>{{ total_animales }}</strong></p>
 
 <div class="card shadow mb-4">
@@ -566,7 +566,7 @@ def reporte_por_ganadero(ganadero_id):
 <!-- NAVBAR -->
 <nav class="navbar navbar-dark bg-dark px-3">
     
-    <span class="navbar-brand mb-0 h1">🐄 Ganadera</span>
+    <span class="navbar-brand mb-0 h1"> Ganadera</span>
 
     <!-- BOTÓN HAMBURGUESA -->
     <div class="dropdown ms-auto">
@@ -583,21 +583,21 @@ def reporte_por_ganadero(ganadero_id):
             <li>
                 <a class="dropdown-item"
                    href="{{ url_for('dashboard') }}">
-                    📊 Dashboard
+                     Dashboard
                 </a>
             </li>
 
             <li>
                 <a class="dropdown-item"
                    href="{{ url_for('vista_ganaderos') }}">
-                    👨‍🌾 Ganaderos
+                     Ganaderos
                 </a>
             </li>
 
             <li>
                 <a class="dropdown-item"
                    href="{{ url_for('vista_animales') }}">
-                    🐂 Animales
+                     Animales
                 </a>
             </li>
 
@@ -606,7 +606,7 @@ def reporte_por_ganadero(ganadero_id):
             <li>
                 <a class="dropdown-item text-danger"
                    href="{{ url_for('logout') }}">
-                    🚪 Cerrar sesión
+                     Cerrar sesión
                 </a>
             </li>
 
@@ -649,7 +649,7 @@ def reporte_por_ganadero(ganadero_id):
 
 {% block content %}
 
-<h2 class="mb-4">📊 Panel de Control</h2>
+<h2 class="mb-4"> Panel de Control</h2>
 
 <div class="row mb-4">
     <div class="col-md-6">
@@ -757,6 +757,7 @@ document.addEventListener("DOMContentLoaded", function () {
 {% endblock %}
 ```
 ## login.html
+Código encargado del "login" o inicio de sesión para los usuarios.
 ```html
 <!DOCTYPE html>
 <html>
@@ -805,10 +806,69 @@ document.addEventListener("DOMContentLoaded", function () {
 </html>
 ```
 # .env
+conexión con la base de datos.
 ```
 DB_USER=root
 DB_PASSWORD=1234
 DB_HOST=localhost
 DB_NAME=vacunacion_ganadera
 SECRET_KEY=1234
+```
+# Carpeta statics
+Esta carpeta contiene el diseño o estilo que llevará la aplicación web.
+## styles.css
+```css
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+nav {
+    background: #2e86c1;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #2e86c1;
+    color: white;
+}
+
+body {
+    font-family: Arial;
+    margin: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    padding: 5px 10px;
+}
 ```
