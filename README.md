@@ -6,7 +6,7 @@ El proyecto resuelve la falta de administración que se lleva en el contexto de 
 
 # INSTALACIÓN
 ## APP.PY
-´´´Python
+'''Python
 from dotenv import load_dotenv
 load_dotenv()
 
