@@ -6,7 +6,7 @@ El proyecto resuelve la falta de administración que se lleva en el contexto de 
 
 # INSTALACIÓN
 ## APP.PY
-'''python
+´´´python
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -144,4 +144,4 @@ def create_app():
 app = create_app()
 if __name__ == "__main__":
     app.run(debug=True)
-'''
+´´´
